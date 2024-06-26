@@ -70,3 +70,24 @@ let customer1 = new Customer("Rony", "Chy", "017777778888", "1234");
 console.log(customer1);
 console.log(customer1.greeting());
 console.log(customer1.fullname());
+
+//Stattic function
+class Person {
+    constructor(fname, lname) {
+        this.firstname = fname;
+        this.lastname = lname;
+    }
+
+    greeting() {
+        console.log(Hello ${this.firstname} ${this.lastname}!);
+    }
+
+    static test() {
+        console.log("I am staic!");
+    }
+}
+
+let person1 = new Person("Simanta", "Paul");
+
+console.log(person1.greeting());
+console.log(Person.test());
