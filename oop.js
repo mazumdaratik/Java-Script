@@ -90,4 +90,4 @@ class Person {
 let person1 = new Person("Simanta", "Paul");
 
 console.log(person1.greeting());
-console.log(Person.test());
+console.log(Person.test())
